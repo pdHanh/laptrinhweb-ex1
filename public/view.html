@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<title>Chi tiết người dùng</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Chi tiết người dùng - Lập trình web</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">http://php.local</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">Đăng nhập</a>
+                <a href="register.html">Đăng ký</a>
+            </nav>
+        </div>
+    </header>
 
-<h2>Thông tin người dùng</h2>
+    <main>
+        <div class="detail-container">
+            <h2>Thông tin chi tiết</h2>
+            <div id="user-detail">
+                <!-- Dữ liệu sẽ được load từ JavaScript -->
+                <p>Đang tải...</p>
+            </div>
+            <a href="index.html" class="btn-back">← Quay lại danh sách</a>
+        </div>
+    </main>
 
-<p><b>ID:</b> 1</p>
-<p><b>Họ tên:</b> Nguyễn Văn A</p>
-<p><b>Email:</b> a@gmail.com</p>
-<p><b>SĐT:</b> 0123456789</p>
+    <footer>
+        <p>Lập trình web @01/2024</p>
+    </footer>
 
-<a href="list.html">Quay lại</a>
-
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,26 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">http://php.local</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="login.html">Đăng nhập</a>
+                <a href="register.html">Đăng ký</a>
+            </nav>
+        </div>
+    </header>
 
-<h2>Trường Cao đẳng Công nghệ Thủ Đức</h2>
-<h3>Khoa CNTT</h3>
+    <main>
+        <div class="form-container">
+            <h2>Màn hình đăng nhập</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label>Mật khẩu:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Ghi nhớ đăng nhập</label>
+                </div>
+                <div class="form-group">
+                    <a href="#" class="forgot">Quên mật khẩu?</a>
+                </div>
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+    </main>
 
-<form>
-    <h3>Đăng nhập</h3>
+    <footer>
+        <p>Lập trình web @01/2024</p>
+    </footer>
 
-    <label>Email</label><br>
-    <input type="text" placeholder="Nhập email"><br><br>
-
-    <label>Password</label><br>
-    <input type="password" placeholder="Nhập mật khẩu"><br><br>
-
-    <button type="submit">Đăng nhập</button>
-
-</form>
-
+    <script src="js/main.js"></script>
 </body>
 </html>
