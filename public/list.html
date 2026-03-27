@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách người dùng - Lập trình web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+ 
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a href="login.html">Đăng nhập</a>
+                <a href="register.html">Đăng ký</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="list-container">
+            <h2>Danh sách người dùng</h2>
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên</th>
+                        <th>Email</th>
+                        <th>Chi tiết</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list">
+                    <!-- Dữ liệu sẽ được load từ JavaScript -->
+                    <tr><td colspan="4" style="text-align:center">Đang tải...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>Lập trình web @01/2024</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
